@@ -8,7 +8,7 @@ import {
 import { BarChart3, Code2, MapPinned, Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const GITHUB_URL = 'https://github.com/anonymouspenguin000/geoguessr-clone';
+const GITHUB_URL = 'https://github.com/secantxx/free-geoguessr-clone';
 
 function AppShell({ active, children }) {
   return (
