@@ -35,7 +35,7 @@ For production:
 1. Follow [Google Maps Platform: Get Started](https://developers.google.com/maps/get-started) to create or select a Google Cloud project and attach billing.
 2. Enable **Maps JavaScript API** in that project.
 3. Open **Google Maps Platform > Credentials**, select **Create credentials > API key**, and use that key in `.env.local`.
-4. Set **Application restrictions** to **Websites (HTTP referrers)**. Add `http://localhost:5173/*` for local development and `https://free-geoguessr.gorlockdestorys.workers.dev/*` for the deployed app.
+4. Set **Application restrictions** to **Websites (HTTP referrers)**. Add `http://localhost:5173/*` for local development and `https://free-geoguessr.gorlock.workers.dev/*` for the deployed app.
 5. Set **API restrictions** to **Maps JavaScript API** only. Add another API only when the browser actually uses it.
 6. Set conservative quotas and billing alerts. See [Google's cost controls](https://developers.google.com/maps/billing-and-pricing/manage-costs) and [current pricing/free usage caps](https://developers.google.com/maps/billing-and-pricing/pricing).
 
@@ -57,7 +57,7 @@ npm run deploy:dry
 npm run deploy
 ```
 
-`npm run deploy` builds with Vite and deploys the generated static assets to [free-geoguessr.gorlockdestorys.workers.dev](https://free-geoguessr.gorlockdestorys.workers.dev).
+`npm run deploy` builds with Vite and deploys the generated static assets to [free-geoguessr.gorlock.workers.dev](https://free-geoguessr.gorlock.workers.dev).
 
 For a custom domain, attach the domain to the Worker in **Cloudflare Dashboard > Workers & Pages > free-geoguessr > Settings > Domains & Routes**, then add that domain to the Google key restrictions.
 
